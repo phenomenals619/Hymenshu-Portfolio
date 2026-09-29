@@ -29,99 +29,103 @@ const Skill = () => {
   return (
     <div
       id="skills"
-      className="min-h-screen bg-cover bg-center bg-fixed p-6 flex items-center justify-center"
+      className="min-h-screen bg-cover bg-center bg-no-repeat md:bg-fixed px-4 py-12 sm:px-6 md:p-10 flex items-center justify-center"
       style={{
         backgroundImage: `url(${Yinlin})`,
       }}
     >
-      <div className="bg-blue-200/50 rounded shadow-md text-black w-full max-w-5xl p-8">
-        <h1 className="text-3xl font-bold text-blue-950 text-center mb-8">
+      <div className="bg-blue-200/75 backdrop-blur-sm rounded-xl shadow-xl text-black w-full max-w-5xl p-5 sm:p-8 md:p-10 border border-white/30">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-950 text-center mb-6 sm:mb-8">
           My Skills (a.k.a. The Stuff That Keeps Me Dangerous)
         </h1>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {/* Frontend */}
-          <div>
-            <h2 className="text-xl font-semibold mb-2">
+          <div className="bg-white/40 sm:bg-transparent rounded-lg p-3 sm:p-0">
+            <h2 className="text-lg sm:text-xl font-semibold mb-2 text-blue-950">
               Frontend (forced labor)
             </h2>
-            <div className="flex gap-4 items-center">
-              <FaHtml5 size={35} color="orangered" />
-              <FaCss3Alt size={35} color="dodgerblue" />
+            <div className="flex gap-4 items-center flex-wrap">
+              <FaHtml5 size={32} color="orangered" title="HTML5" />
+              <FaCss3Alt size={32} color="dodgerblue" title="CSS3" />
             </div>
-            <p className="text-sm mt-2 italic">
+            <p className="text-sm mt-2 italic text-gray-800">
               I can make things *look* good... under protest.
             </p>
           </div>
 
           {/* Backend */}
-          <div>
-            <h2 className="text-xl font-semibold mb-2">
+          <div className="bg-white/40 sm:bg-transparent rounded-lg p-3 sm:p-0">
+            <h2 className="text-lg sm:text-xl font-semibold mb-2 text-blue-950">
               Backend (my battlefield)
             </h2>
-            <div className="flex gap-4 flex-wrap items-center">
-              <FaJava size={35} color="red" />
-              <SiSpringboot size={35} color="green" />
-              <SiHibernate size={35} color="#59666C" />
-              <SiApachemaven size={35} color="#C71A36" />
-              <SiPostman size={35} color="#FF6C37" />
+            <div className="flex gap-3 sm:gap-4 flex-wrap items-center">
+              <FaJava size={32} color="red" title="Java" />
+              <SiSpringboot size={32} color="green" title="Spring Boot" />
+              <SiHibernate size={32} color="#59666C" title="Hibernate" />
+              <SiApachemaven size={32} color="#C71A36" title="Maven" />
+              <SiPostman size={32} color="#FF6C37" title="Postman" />
             </div>
-            <p className="text-sm mt-2 italic">
+            <p className="text-sm mt-2 italic text-gray-800">
               Where logic lives and nonsense dies.
             </p>
           </div>
 
           {/* Database */}
-          <div>
-            <h2 className="text-xl font-semibold mb-2">Database (my vault)</h2>
-            <div className="flex gap-4 flex-wrap items-center">
-              <SiMysql size={35} color="#00758F" />
-              <SiMongodb size={35} color="green" />
-              <GrOracle size={35} color="darkred" />
-              <SiRedis size={35} color="#DC382D" />
-              <FaDatabase size={35} />
+          <div className="bg-white/40 sm:bg-transparent rounded-lg p-3 sm:p-0">
+            <h2 className="text-lg sm:text-xl font-semibold mb-2 text-blue-950">
+              Database (my vault)
+            </h2>
+            <div className="flex gap-3 sm:gap-4 flex-wrap items-center">
+              <SiMysql size={32} color="#00758F" title="MySQL" />
+              <SiMongodb size={32} color="green" title="MongoDB" />
+              <GrOracle size={32} color="darkred" title="Oracle" />
+              <SiRedis size={32} color="#DC382D" title="Redis" />
+              <FaDatabase size={32} title="Database" />
             </div>
-            <p className="text-sm mt-2 italic">
+            <p className="text-sm mt-2 italic text-gray-800">
               Queries so fast, even time gets jealous.
             </p>
           </div>
 
           {/* Dev Tools */}
-          <div>
-            <h2 className="text-xl font-semibold mb-2">
+          <div className="bg-white/40 sm:bg-transparent rounded-lg p-3 sm:p-0">
+            <h2 className="text-lg sm:text-xl font-semibold mb-2 text-blue-950">
               Dev Tools (my utility belt)
             </h2>
-            <div className="flex gap-4 flex-wrap items-center">
-              <FaGithub size={35} />
-              <SiDocker size={35} color="#2496ED" />
-              <SiLinux size={35} color="#000000" />
+            <div className="flex gap-3 sm:gap-4 flex-wrap items-center">
+              <FaGithub size={32} title="GitHub" />
+              <SiDocker size={32} color="#2496ED" title="Docker" />
+              <SiLinux size={32} color="#000000" title="Linux" />
             </div>
-            <p className="text-sm mt-2 italic">
+            <p className="text-sm mt-2 italic text-gray-800">
               Where I automate pain and deploy dreams.
             </p>
           </div>
 
           {/* Data Analysis */}
-          <div>
-            <h2 className="text-xl font-semibold mb-2">
+          <div className="bg-white/40 sm:bg-transparent rounded-lg p-3 sm:p-0">
+            <h2 className="text-lg sm:text-xl font-semibold mb-2 text-blue-950">
               Data Analysis (nerd mode)
             </h2>
-            <div className="flex gap-4 flex-wrap items-center">
-              <SiPython size={35} color="#3776AB" />
-              <SiPandas size={35} color="#150458" />
-              <SiNumpy size={35} color="#013243" />
-              <SiJupyter size={35} color="#F37726" />
-              <SiScikitlearn size={35} color="#F7931E" />
+            <div className="flex gap-3 sm:gap-4 flex-wrap items-center">
+              <SiPython size={32} color="#3776AB" title="Python" />
+              <SiPandas size={32} color="#150458" title="Pandas" />
+              <SiNumpy size={32} color="#013243" title="NumPy" />
+              <SiJupyter size={32} color="#F37726" title="Jupyter" />
+              <SiScikitlearn size={32} color="#F7931E" title="Scikit-Learn" />
             </div>
-            <p className="text-sm mt-2 italic">
+            <p className="text-sm mt-2 italic text-gray-800">
               Where I slice, dice, and expose your data’s secrets.
             </p>
           </div>
-          {/* Gyaan Peelna Section */}
 
-          <div>
-            <h2 className="text-xl font-semibold mb-2">Gyaan Peelna 📢</h2>
-            <div className="bg-white/70 rounded p-4 text-sm italic leading-relaxed shadow">
+          {/* Gyaan Peelna Section */}
+          <div className="bg-white/40 sm:bg-transparent rounded-lg p-3 sm:p-0">
+            <h2 className="text-lg sm:text-xl font-semibold mb-2 text-blue-950">
+              Gyaan Peelna 📢
+            </h2>
+            <div className="bg-white/80 rounded-lg p-3 sm:p-4 text-xs sm:text-sm italic leading-relaxed shadow-sm text-gray-800">
               <p className="mb-2">
                 “React se toh duniya chalta hai, par backend se hi duniya bacha
                 hai.”

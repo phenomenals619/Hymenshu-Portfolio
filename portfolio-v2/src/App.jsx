@@ -8,7 +8,7 @@ import Contact from "./components/Contact";
 
 function App() {
   return (
-    <div className="font-serif">
+    <div className="font-serif min-h-screen w-full overflow-x-hidden">
       <Navbar />
       <Home />
       <About />

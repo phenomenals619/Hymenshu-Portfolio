@@ -3,54 +3,55 @@ import gojo from "../assets/images/gojo.jpeg";
 
 const Contact = () => {
   return (
-    <>
-      <div
-        id="contact"
-        className="p-20 pt-5 min-h-[calc(100vh-69px)]  bg-cover flex justify-end"
-        style={{ backgroundImage: `url(${gojo})` }}
-      >
-        <div className="mt-15 bg-blue-200/[0.5] rounded-sm shadow-lg text-black min-w-md  max-w-md p-5">
-          <h1 className="text-4xl pt-5 text-center font-bold text-blue-950 mb-2">
-            CONTACT{" "}
-          </h1>
-          <form
-            action=""
-            className="bg-yellow-100 rounded-sm p-5 flex flex-col gap-5"
+    <div
+      id="contact"
+      className="px-4 sm:px-8 md:px-20 py-12 min-h-[calc(100vh-69px)] bg-cover bg-center flex justify-center md:justify-end items-center"
+      style={{ backgroundImage: `url(${gojo})` }}
+    >
+      <div className="w-full max-w-md bg-blue-200/80 sm:bg-blue-200/50 backdrop-blur-xs rounded-lg shadow-lg text-black p-4 sm:p-6">
+        <h1 className="text-3xl sm:text-4xl pt-2 text-center font-bold text-blue-950 mb-4">
+          CONTACT
+        </h1>
+        <form
+          action=""
+          onSubmit={(e) => e.preventDefault()}
+          className="bg-yellow-100/90 rounded-md p-4 sm:p-5 flex flex-col gap-4 shadow-sm"
+        >
+          <div className="flex flex-col gap-1">
+            <label className="text-sm font-semibold text-gray-800">Name</label>
+            <input
+              type="text"
+              placeholder="Enter your name"
+              className="border border-green-700 bg-white rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-600 transition"
+            />
+          </div>
+          <div className="flex flex-col gap-1">
+            <label className="text-sm font-semibold text-gray-800">Email</label>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="border border-green-700 bg-white rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-600 transition"
+            />
+          </div>
+          <div className="flex flex-col gap-1">
+            <label className="text-sm font-semibold text-gray-800">Message</label>
+            <textarea
+              rows="4"
+              placeholder="Your message..."
+              className="border border-green-700 bg-white rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-600 transition resize-none"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            className="bg-green-600 hover:bg-green-500 text-white font-bold py-2 px-4 rounded transition duration-200 shadow cursor-pointer mt-1"
           >
-            <div className="flex flex-col">
-              <label htmlFor="">Name</label>
-              <input
-                type="text"
-                name=""
-                id=""
-                placeholder="Enter your name"
-                className="border-1 focus:outline-2 border-green-700 px-2 py-1"
-              />
-            </div>
-            <div className="flex flex-col">
-              <label htmlFor="">Email</label>
-              <input
-                type="text"
-                name=""
-                id=""
-                placeholder="Enter your name"
-                className="border-1 focus:outline-2 border-green-700 px-2 py-1"
-              />
-            </div>
-            <div className="flex flex-col">
-              <label htmlFor="">Message</label>
-              <textarea
-                name=""
-                id=""
-                className="border-1 border-green-700 px-2 py-1 focus:outline-2 focus:ring-green-700"
-              ></textarea>
-            </div>
-            <button className="bg-green-500 font-bold py-1 px-2">Submit</button>
-          </form>
-        </div>
+            Submit
+          </button>
+        </form>
       </div>
-    </>
+    </div>
   );
 };
 
 export default Contact;
+
