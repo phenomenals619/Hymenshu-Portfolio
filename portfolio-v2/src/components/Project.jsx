@@ -38,7 +38,8 @@ const Project = () => {
             </a>
           </div>
 
-          {/* Project 2 */}
+          {/* Project 2 - College Management System (Commented out) */}
+          {/*
           <div className="bg-gray-900/90 text-white rounded-xl p-5 sm:p-6 shadow-md flex flex-col justify-between hover:shadow-xl transition-all">
             <div>
               <h2 className="text-xl sm:text-2xl font-semibold mb-3 text-green-300">
@@ -60,8 +61,10 @@ const Project = () => {
               🎓 Source Code
             </a>
           </div>
+          */}
 
-          {/* Project 3 */}
+          {/* Project 2 - WoW Calculator */}
+
           <div className="bg-gray-900/90 text-white rounded-xl p-5 sm:p-6 shadow-md flex flex-col justify-between hover:shadow-xl transition-all">
             <div>
               <h2 className="text-xl sm:text-2xl font-semibold mb-3 text-green-300">
@@ -81,6 +84,25 @@ const Project = () => {
               className="bg-green-400 text-black font-semibold mt-auto px-4 py-2 rounded-lg hover:bg-green-300 transition-colors w-fit text-sm sm:text-base inline-block"
             >
               🪪 Source Code
+            </a>
+          </div>
+          {/* Project 3 */}
+          <div className="bg-gray-900/90 text-white rounded-xl p-5 sm:p-6 shadow-md flex flex-col justify-between hover:shadow-xl transition-all">
+            <div>
+              <h2 className="text-xl sm:text-2xl font-semibold mb-3 text-green-300">
+                WoW Calculator (Because 2 + 2 is hard 🧮)
+              </h2>
+              <p className="text-sm italic indent-4 sm:indent-6 mb-4 text-gray-300 leading-relaxed">
+                Built because pressing buttons on my phone was hurting my developer ego. Named “WoW” because even basic math needs a miracle. It calculates everything accurately—except my Age.
+              </p>
+            </div>
+            <a
+              href="https://github.com/phenomenals619/WoW-Calculator"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-400 text-black font-semibold mt-auto px-4 py-2 rounded-lg hover:bg-green-300 transition-colors w-fit text-sm sm:text-base inline-block"
+            >
+              🧮 Source Code
             </a>
           </div>
         </div>

@@ -38,7 +38,8 @@ const Project = () => {
             </a>
           </div>
 
-          {/* Project 2 */}
+          {/* Project 2 - College Management System (Commented out) */}
+          {/*
           <div className="bg-gray-900/90 text-white rounded-lg p-5 sm:p-6 shadow-md flex flex-col justify-between">
             <div>
               <h2 className="text-xl sm:text-2xl font-semibold mb-3">
@@ -60,8 +61,10 @@ const Project = () => {
               🎓 Source Code
             </a>
           </div>
+          */}
 
-          {/* Project 3 */}
+          {/* Project 2 - WoW Calculator */}
+
           <div className="bg-gray-900/90 text-white rounded-lg p-5 sm:p-6 shadow-md flex flex-col justify-between md:col-span-2 lg:col-span-1">
             <div>
               <h2 className="text-xl sm:text-2xl font-semibold mb-3">
@@ -81,6 +84,25 @@ const Project = () => {
               className="bg-green-400 hover:bg-green-300 text-black font-semibold mt-4 px-4 py-2 rounded transition w-full sm:w-fit text-center"
             >
               🪪 Source Code
+            </a>
+          </div>
+          {/* Project 3 */}
+          <div className="bg-gray-900/90 text-white rounded-lg p-5 sm:p-6 shadow-md flex flex-col justify-between">
+            <div>
+              <h2 className="text-xl sm:text-2xl font-semibold mb-3">
+                WoW Calculator (Because 2 + 2 is hard 🧮)
+              </h2>
+              <p className="text-xs sm:text-sm italic indent-4 sm:indent-6 mb-4 leading-relaxed text-gray-200">
+                Named “WoW” because even basic math needs a miracle. Built with 3 sleepless nights and questionable life choices. It calculates everything accurately—except my future.
+              </p>
+            </div>
+            <a
+              href="https://github.com/phenomenals619/WoW-Calculator"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-400 hover:bg-green-300 text-black font-semibold mt-4 px-4 py-2 rounded transition w-full sm:w-fit text-center"
+            >
+              🧮 Source Code
             </a>
           </div>
         </div>
